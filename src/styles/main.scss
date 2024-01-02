@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../../node_modules/swiper/swiper-bundle.min";
+@import "./fonts";
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-weight: 400;
+}
