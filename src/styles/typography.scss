@@ -1,0 +1,9 @@
+h2,
+.h2 {
+  @apply font-Poppins text-[35px] font-extrabold uppercase leading-[105%] md:text-[45px] md:leading-normal lg:text-6xl lg-2:text-[75px];
+}
+
+h3,
+.h3 {
+  @apply font-Poppins text-xl font-light uppercase md:text-3xl md:leading-normal lg-2:text-[40px];
+}

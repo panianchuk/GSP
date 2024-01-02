@@ -1,0 +1,60 @@
+<section id="social" x-data="socialForm">
+  <div class="container">
+    <div
+      class="mb-[31px] px-11 sm:grid sm:grid-cols-[80px,_1fr] sm:grid-rows-[auto,_auto] sm:px-0 md:mb-12.5 md:grid-cols-[170px,_1fr]"
+    >
+      <h3 class="h3 sm:flex sm:justify-end">our</h3>
+      <h2 class="h2 sm:col-start-2 sm:row-start-2">social</h2>
+    </div>
+  </div>
+  <div
+    class="flex h-[248px] items-center justify-center bg-[url('../img/social/man_back_bg-mob.png')] bg-cover bg-center md:h-[391px] md:bg-[url('../img/social/man_back_bg-desk.png')]"
+  >
+    <img
+      class="h-12 w-[52px] md:h-[83px] md:w-[88px]"
+      src="./img/svg/in.svg"
+      alt="in"
+    />
+  </div>
+  <div class="bg-lightGrey pb-11 pt-10 md:pb-16 md:pt-[58px]">
+    <div class="container">
+      <h4
+        class="mb-12 text-center text-3xl font-medium uppercase leading-[130%] md:mb-9.5 md:text-left"
+      >
+        LET’S get IN TOUCH!
+      </h4>
+      <form
+        id="social-form"
+        class="w-full md:grid md:grid-cols-[minmax(400px,_757px),_minmax(300px,_1fr)]"
+      >
+        <div class="flex flex-col gap-4 md:gap-[25px]">
+          <input
+            type="text"
+            name="name"
+            id="socialForm_name"
+            placeholder="Your name"
+            class="w-full border-b border-black bg-transparent p-2 pt-0 text-sm font-light leading-[160%] text-black outline-none placeholder:text-sm placeholder:font-light placeholder:leading-[160%] placeholder:text-black md:px-3 md:text-lg md:placeholder:text-lg"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="socialForm_mail"
+            placeholder="Your email"
+            class="w-full border-b border-black bg-transparent p-2 pt-0 text-sm font-light leading-[160%] text-black outline-none placeholder:text-sm placeholder:font-light placeholder:leading-[160%] placeholder:text-black md:px-3 md:text-lg md:placeholder:text-lg"
+            required
+          />
+          <textarea
+            name="message"
+            id="socialForm_message"
+            placeholder="Your message"
+            class="h-22 w-full border-b border-black bg-transparent p-2 pt-0 text-sm font-light leading-[160%] text-black outline-none placeholder:text-sm placeholder:font-light placeholder:leading-[160%] placeholder:text-black md:h-[93px] md:px-3 md:text-lg md:placeholder:text-lg"
+          ></textarea>
+        </div>
+        <div class="mt-8.5 flex justify-center md:justify-end md:self-end">
+          <button type="submit" class="btn-secondary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
