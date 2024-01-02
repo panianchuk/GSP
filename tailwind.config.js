@@ -23,7 +23,7 @@ module.exports = {
       "xl-2": "1536px",
     },
     spacing: {
-      0: '0',
+      0: "0",
       0.5: "0.125rem" /* 2px */,
       1: "0.25rem" /* 4px */,
       1.5: "0.375rem" /* 6px */,
@@ -77,7 +77,7 @@ module.exports = {
       center: true,
       padding: {
         DEFAULT: "20px",
-        lg: "60px",
+        md: "60px",
         xl: "100px",
       },
     },
