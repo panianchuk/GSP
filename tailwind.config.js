@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
 module.exports = {
-  content: [],
   theme: {
     extend: {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
+      },
+      colors: {
+        lightGrey: "#d2d2d2",
+        ...colors,
       },
     },
     screens: {
@@ -18,6 +23,7 @@ module.exports = {
       "xl-2": "1536px",
     },
     spacing: {
+      0: '0',
       0.5: "0.125rem" /* 2px */,
       1: "0.25rem" /* 4px */,
       1.5: "0.375rem" /* 6px */,
@@ -67,9 +73,6 @@ module.exports = {
       80: "20rem" /* 320px */,
       96: "24rem" /* 384px */,
     },
-    colors: {
-      lightGrey: "#d2d2d2",
-    },
     container: {
       center: true,
       padding: {
@@ -78,7 +81,7 @@ module.exports = {
         xl: "100px",
       },
     },
-    important: true,
+    important: false,
   },
   plugins: [
     function ({ addComponents }) {
