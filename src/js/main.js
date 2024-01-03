@@ -1,16 +1,19 @@
 import Alpine from "alpinejs";
 // import AlpineI18n from "alpinejs-i18n";
-import "./_vendor";
-import { headerMenu } from "./store/headerMenu";
-import { hero } from "./components/hero";
+
+import './_vendor';
+import { mobileMenu } from './store/mobile-menu';
+import { stopScroll } from './store/stop-scroll';
+import { hero } from './components/hero';
 import { socialForm } from "./components/socialForm";
 import { clientsWords } from "./components/clientsWords";
 // import { content } from './vendor/content';
 
-document.addEventListener("alpine:init", () => {
-  // alpine store
-  Alpine.store("headerMenu", headerMenu);
-  // alpine store end
+document.addEventListener('alpine:init', () => {
+    // alpine store
+    Alpine.store('mobileMenu', mobileMenu)
+    Alpine.store('stopScroll', stopScroll)
+    // alpine store end
 
   // alpine data
   Alpine.data("hero", hero);
