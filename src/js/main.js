@@ -1,9 +1,12 @@
-import Alpine from 'alpinejs';
+import Alpine from "alpinejs";
 // import AlpineI18n from "alpinejs-i18n";
+
 import './_vendor';
 import { mobileMenu } from './store/mobile-menu';
 import { stopScroll } from './store/stop-scroll';
 import { hero } from './components/hero';
+import { socialForm } from "./components/socialForm";
+import { clientsWords } from "./components/clientsWords";
 // import { content } from './vendor/content';
 
 document.addEventListener('alpine:init', () => {
@@ -12,16 +15,18 @@ document.addEventListener('alpine:init', () => {
     Alpine.store('stopScroll', stopScroll)
     // alpine store end
 
-    // alpine data
-    Alpine.data('hero', hero);
-})
+  // alpine data
+  Alpine.data("hero", hero);
+  Alpine.data("clientsWords", clientsWords);
+  Alpine.data("socialForm", socialForm);
+});
 
 // document.addEventListener("alpine-i18n:ready", function () {
 //     let locale = "en";
 //     window.AlpineI18n.create(locale, content);
 // });
 
-window.Alpine = Alpine
+window.Alpine = Alpine;
 // Alpine.plugin(AlpineI18n);
 
-Alpine.start()
+Alpine.start();

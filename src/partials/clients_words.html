@@ -1,0 +1,73 @@
+<section
+  x-data="clientsWords"
+  id="clients_words"
+  class="bg-[url('../img/clients_words/clients_words_bg-mob.png')] bg-cover bg-center sm:bg-[url('../img/clients_words/clients_words_bg-desk.png')]"
+>
+  <div class="container relative">
+    <div class="flex items-start justify-between">
+      <div
+        class="mb-[31px] px-11 sm:grid sm:grid-cols-[80px,_1fr] sm:grid-rows-[auto,_auto] sm:px-0 md:mb-12.5 md:grid-cols-[170px,_1fr]"
+      >
+        <h3 class="h3 text-white sm:flex sm:justify-end">our</h3>
+        <h2 class="h2 text-white sm:col-start-2 sm:row-start-2">
+          CLIENT’S WORDS
+        </h2>
+      </div>
+      <div class="clients_words-pagination flex-shrink-0 text-white"></div>
+    </div>
+    <!-- Slider main container -->
+    <div class="!pl-4 swiper clients_words-swiper">
+      <div class="swiper-wrapper">
+        <template x-for="client in clients_words" :key="client.id">
+          <div class="swiper-slide text-white">
+            <div>
+              <div
+                class="grid grid-cols-[auto,_1fr,_auto] grid-rows-[repeat(3,_auto)]"
+              >
+                <div class="col-start-1 row-start-1 mb-2">
+                  <svg
+                    width="25"
+                    height="15"
+                    viewBox="0 0 25 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.0502 14.85H0.200195L5.9502 0.75H12.4502L10.0502 14.85ZM22.5002 14.85H12.6502L18.4002 0.75H24.9002L22.5002 14.85Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <p
+                  x-text="client.text"
+                  class="col-span-2 col-start-2 row-start-2 row-end-3 text-xs font-light leading-[160%]"
+                ></p>
+                <div class="col-start-3 row-start-3">
+                  <svg
+                    width="25"
+                    height="15"
+                    viewBox="0 0 25 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.85 14.1H0L5.75 0H12.25L9.85 14.1ZM22.3 14.1H12.45L18.2 0H24.7L22.3 14.1Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <h5
+                  class="mt-2.5 text-xs font-medium leading-[160%] col-start-2 row-start-5"
+                  x-text="client.author"
+                ></h5>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <div class="clients_words-prev">prev</div>
+      <div class="clients_words-next">next</div>
+    </div>
+  </div>
+</section>

@@ -3,6 +3,9 @@
 @tailwind utilities;
 @import "../../node_modules/swiper/swiper-bundle.min";
 @import "./fonts";
+@import "./typography";
+
+@import './slider.scss';
 
 html,
 body {
@@ -11,3 +14,15 @@ body {
   font-weight: 400;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #d2d2d2 inset;
+  -webkit-text-fill-color: #000;
+}
+
+.btn-primary {
+  @apply h-12.5 w-full max-w-[249px] border border-white font-Poppins text-base uppercase leading-normal text-white duration-200 hover:bg-white hover:text-black md:h-[58px] md:max-w-[216px] md:text-xl md:leading-normal;
+}
+.btn-secondary {
+  @apply h-12.5 w-full max-w-[249px] border border-black font-Poppins text-base uppercase leading-normal text-black duration-200 hover:border-white hover:bg-white md:h-[58px] md:max-w-[216px] md:text-xl md:leading-normal;
+}

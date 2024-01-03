@@ -1,0 +1,51 @@
+#clients_words {
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    width: auto;
+  }
+
+  .clients_words-pagination {
+    display: grid;
+    grid-template-columns: 2;
+    align-items: start
+  }
+
+  .current {
+    grid-column-start: 1;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    width: 14px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 3px;
+      left: 0;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background: #fff;
+    }
+  }
+
+  .total {
+    grid-column-start: 2;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-top: 20px;
+  }
+}
