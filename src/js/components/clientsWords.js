@@ -10,11 +10,13 @@ export const clientsWords = () => ({
   init() {
     document.addEventListener("DOMContentLoaded", () => {
       this.initSwiper();
+      this.clients_words = clients_words;
     });
   },
 
   initSwiper() {
     this.slider = new Swiper(".clients_words-swiper", {
+      slidesPerView: 1,
       navigation: {
         nextEl: ".clients_words-next",
         prevEl: ".clients_words-prev",

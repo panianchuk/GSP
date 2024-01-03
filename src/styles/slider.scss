@@ -7,7 +7,7 @@
   .clients_words-pagination {
     display: grid;
     grid-template-columns: 2;
-    align-items: start
+    align-items: start;
   }
 
   .current {
@@ -33,6 +33,15 @@
       width: 100%;
       background: #fff;
     }
+
+    @media (min-width: 768px) {
+      font-size: 52.055px;
+      width: 28px;
+
+      &::after {
+        bottom: 15px;
+      }
+    }
   }
 
   .total {
@@ -46,6 +55,26 @@
     line-height: normal;
     text-transform: uppercase;
     opacity: 0.5;
-    padding-top: 20px;
+    position: relative;
+    top: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 97.603px;
+      top: 30px;
+    }
+  }
+
+  .clients_words-next svg,
+  .clients_words-prev svg {
+    fill: white;
+  }
+
+  .swiper-button-disabled.clients_words-next svg,
+  .swiper-button-disabled.clients_words-prev svg {
+    fill: #858585;
+  }
+  .swiper-button-disabled.clients_words-next,
+  .swiper-button-disabled.clients_words-prev {
+    border-color: #858585;
   }
 }
