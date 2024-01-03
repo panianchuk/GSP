@@ -6,6 +6,7 @@ import { mobileMenu } from './store/mobile-menu';
 import { stopScroll } from './store/stop-scroll';
 import { hero } from './components/hero';
 import { socialForm } from "./components/socialForm";
+import { servicesSlider } from "./components/servicesSlider";
 import { clientsWords } from "./components/clientsWords";
 // import { content } from './vendor/content';
 
@@ -17,6 +18,7 @@ document.addEventListener('alpine:init', () => {
 
   // alpine data
   Alpine.data("hero", hero);
+  Alpine.data("servicesSlider", servicesSlider);
   Alpine.data("clientsWords", clientsWords);
   Alpine.data("socialForm", socialForm);
 });

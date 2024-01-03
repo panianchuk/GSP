@@ -1,9 +1,10 @@
+#services,
 #clients_words {
   .swiper-pagination-custom,
   .swiper-pagination-fraction {
     width: auto;
   }
-
+  .services-pagination,
   .clients_words-pagination {
     display: grid;
     grid-template-columns: 2;
@@ -64,17 +65,36 @@
     }
   }
 
-  .clients_words-next svg,
-  .clients_words-prev svg {
-    fill: white;
+  .services-next,
+  .services-prev,
+  .clients_words-next,
+  .clients_words-prev {
+    svg {
+      fill: white;
+    }
+    &:hover svg {
+      fill: black;
+    }
+
+    &:hover {
+      background-color: white;
+    }
   }
 
-  .swiper-button-disabled.clients_words-next svg,
-  .swiper-button-disabled.clients_words-prev svg {
-    fill: #858585;
-  }
+  .swiper-button-disabled.services-next,
+  .swiper-button-disabled.services-prev,
   .swiper-button-disabled.clients_words-next,
   .swiper-button-disabled.clients_words-prev {
     border-color: #858585;
+    cursor: auto;
+
+    svg {
+      fill: #858585;
+    }
+
+    &:hover {
+      background-color: #fff;
+      opacity: 0.5;
+    }
   }
 }
