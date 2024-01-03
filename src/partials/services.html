@@ -1,0 +1,104 @@
+<section id="services" class="relative" x-data="servicesSlider">
+  <div class="flex justify-center">
+    <div
+      class="grid-col-2 grid-row-2 absolute top-[54px] z-10 mb-[31px] grid w-full max-w-[1440px] pl-[63px] pr-8 sm:grid-cols-[80px,_1fr,_80px] sm:pl-0 md:px-[60px] lg-2:top-[85px] lg-2:grid-cols-[170px,_1fr,_170px] lg-2:pl-25 lg-2:pr-[130px]"
+    >
+      <h3 class="h3 col-start-1 text-white sm:flex sm:justify-end">our</h3>
+      <h2 class="h2 col-start-1 text-white sm:col-start-2 sm:row-start-2">
+        services
+      </h2>
+      <!-- slider fraction -->
+      <div
+        class="col-start-2 row-span-3 row-start-1 flex justify-end sm:col-start-3 sm:justify-start"
+      >
+        <div class="services-pagination flex-shrink-0 text-white"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- swiper -->
+  <div class="flex justify-center">
+    <div class="swiper services-swiper !static">
+      <div class="swiper-wrapper">
+        <template x-for="service in services_content" :key="service.id">
+          <div class="swiper-slide !h-auto text-white">
+            <img
+              class="absolute left-0 top-0 z-[-2] flex h-full w-full object-cover sm:hidden"
+              :src="service.img_mob"
+              alt="img"
+            />
+            <img
+              class="absolute left-0 top-0 z-[-2] hidden h-full w-full object-cover sm:flex"
+              :src="service.img_desk"
+              alt="img"
+            />
+
+            <div
+              class="container !pl-[63px] pb-[204px] pt-[167px] sm:!pl-20 md:!pl-[140px] md:pb-[190px] md:pt-[220px] lg-2:!px-[270px] lg-2:pt-[272px]"
+            >
+              <div class="flex flex-col gap-5">
+                <h5
+                  class="text-xl font-medium uppercase leading-[130%]"
+                  x-text="service.heading"
+                ></h5>
+                <p
+                  x-text="service.text"
+                  class="text-sm font-light leading-[160%] md:text-lg"
+                ></p>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+
+      <!-- nav -->
+      <div class="flex justify-center">
+        <div
+          class="!absolute bottom-[50px] !z-10 grid w-full max-w-[1440px] gap-[38px] md:grid-cols-2 md:pl-[140px] md:pr-[60px] lg-2:bottom-[78px] lg-2:!px-[270px]"
+        >
+          <div class="flex justify-center md:justify-start">
+            <button class="btn-primary w-full">
+              <a href="#contacts">contact us</a>
+            </button>
+          </div>
+
+          <!-- btn navigation -->
+          <div class="flex items-center justify-center gap-8.5 md:justify-end">
+            <div
+              class="services-prev grid h-[45px] w-[45px] cursor-pointer place-content-center border border-white transition-all duration-200 md:h-[58px] md:w-[58px]"
+            >
+              <svg
+                width="23"
+                height="12"
+                viewBox="0 0 23 12"
+                fill="currenColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.8013 5.27027L22.5808 5.27027L22.5808 6.82933L21.8013 6.82933L21.8013 5.27027ZM0.859999 6.60101C0.555572 6.29659 0.555573 5.80302 0.859999 5.49859L5.8209 0.537694C6.12532 0.233268 6.61889 0.233268 6.92332 0.537694C7.22774 0.842119 7.22774 1.33569 6.92332 1.64012L2.51363 6.0498L6.92332 10.4595C7.22774 10.7639 7.22774 11.2575 6.92332 11.5619C6.61889 11.8663 6.12532 11.8663 5.8209 11.5619L0.859999 6.60101ZM21.8013 6.82933L1.41121 6.82933L1.41121 5.27027L21.8013 5.27027L21.8013 6.82933Z"
+                  fill="currenColor"
+                />
+              </svg>
+            </div>
+            <div
+              class="services-next grid h-[45px] w-[45px] cursor-pointer place-content-center border border-white transition-all duration-200 md:h-[58px] md:w-[58px]"
+            >
+              <svg
+                width="23"
+                height="12"
+                viewBox="0 0 23 12"
+                fill="currenColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.19873 5.27027L0.4192 5.27027L0.419201 6.82933L1.19873 6.82933L1.19873 5.27027ZM22.14 6.60101C22.4444 6.29659 22.4444 5.80302 22.14 5.49859L17.1791 0.537694C16.8747 0.233268 16.3811 0.233268 16.0767 0.537694C15.7723 0.842119 15.7723 1.33569 16.0767 1.64012L20.4864 6.0498L16.0767 10.4595C15.7723 10.7639 15.7723 11.2575 16.0767 11.5619C16.3811 11.8663 16.8747 11.8663 17.1791 11.5619L22.14 6.60101ZM1.19873 6.82933L21.5888 6.82933L21.5888 5.27027L1.19873 5.27027L1.19873 6.82933Z"
+                  fill="currenColor"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

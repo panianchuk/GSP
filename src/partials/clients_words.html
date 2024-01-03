@@ -5,7 +5,7 @@
 >
   <div class="container relative pb-9 pt-11 md:pb-[78px] md:pt-[55px]">
     <div
-      class="grid-col-2 grid-row-2 mb-[31px] grid pl-11 pr-3 sm:grid-cols-[80px,_1fr,_80px] sm:pl-0 lg:grid-cols-[170px,_1fr,_170px]"
+      class="grid-col-2 grid-row-2 mb-[31px] grid pl-11 pr-3 sm:grid-cols-[80px,_1fr,_80px] sm:pl-0 sm:pr-0 lg-2:grid-cols-[170px,_1fr,_170px]"
     >
       <h3 class="h3 col-start-1 text-white sm:flex sm:justify-end">our</h3>
       <h2 class="h2 col-start-1 text-white sm:col-start-2 sm:row-start-2">
@@ -19,13 +19,13 @@
       </div>
     </div>
     <!-- Slider main container -->
-    <div class="swiper clients_words-swiper !ml-3">
+    <div class="swiper clients_words-swiper !ml-3 sm:!ml-0">
       <div class="swiper-wrapper">
         <template x-for="client in clients_words" :key="client.id">
           <div class="swiper-slide text-white">
             <div>
               <div
-                class="grid grid-cols-[auto,_1fr,_auto] grid-rows-[repeat(3,_auto)] sm:grid-cols-[80px,_1fr,_80px] lg:grid-cols-[170px,_1fr,_170px]"
+                class="grid grid-cols-[auto,_1fr,_auto] grid-rows-[repeat(3,_auto)] sm:grid-cols-[80px,_1fr,_80px] lg-2:grid-cols-[170px,_1fr,_170px]"
               >
                 <div class="col-start-1 row-start-1 mb-2 flex sm:justify-end">
                   <svg
@@ -70,7 +70,7 @@
       </div>
 
       <div
-        class="mt-[54px] grid gap-[38px] sm:px-20 md:grid-cols-2 lg:px-[170px]"
+        class="mt-[54px] grid gap-[38px] sm:px-20 md:grid-cols-2 lg-2:px-[170px]"
       >
         <div class="flex justify-center md:justify-start">
           <button class="btn-primary w-full">
