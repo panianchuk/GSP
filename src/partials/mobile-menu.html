@@ -22,27 +22,37 @@
 
         <ul class="flex p-5 uppercase flex-col space-y-6 text-xl text-white pt-12.5 px-15">
             <li class="flex items-center">
-                <a class="font-bold" href="#home">
+                <a
+                    @click="$store.mobileMenu.hide()"
+                    class="font-bold" href="#home">
                     Home
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a
+                    @click="$store.mobileMenu.hide()"
+                    href="#about">
                     About us
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a
+                    @click="$store.mobileMenu.hide()"
+                    href="#clients_words">
                     Reviews
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a
+                    @click="$store.mobileMenu.hide()"
+                    href="#partners">
                     Partners
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a
+                    @click="$store.mobileMenu.hide()"
+                    href="#contacts">
                     Contacts
                 </a>
             </li>
