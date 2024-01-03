@@ -3,28 +3,31 @@
   id="clients_words"
   class="bg-[url('../img/clients_words/clients_words_bg-mob.png')] bg-cover bg-center sm:bg-[url('../img/clients_words/clients_words_bg-desk.png')]"
 >
-  <div class="container relative">
-    <div class="flex items-start justify-between">
+  <div class="container relative pb-9 pt-11 md:pb-[78px] md:pt-[55px]">
+    <div
+      class="grid-col-2 grid-row-2 mb-[31px] grid pl-11 pr-3 sm:grid-cols-[80px,_1fr,_80px] sm:pl-0 lg:grid-cols-[170px,_1fr,_170px]"
+    >
+      <h3 class="h3 col-start-1 text-white sm:flex sm:justify-end">our</h3>
+      <h2 class="h2 col-start-1 text-white sm:col-start-2 sm:row-start-2">
+        CLIENT’S WORDS
+      </h2>
+      <!-- slider fraction -->
       <div
-        class="mb-[31px] px-11 sm:grid sm:grid-cols-[80px,_1fr] sm:grid-rows-[auto,_auto] sm:px-0 md:mb-12.5 md:grid-cols-[170px,_1fr]"
+        class="col-start-2 row-span-2 row-start-1 flex justify-end sm:col-start-3 sm:justify-start"
       >
-        <h3 class="h3 text-white sm:flex sm:justify-end">our</h3>
-        <h2 class="h2 text-white sm:col-start-2 sm:row-start-2">
-          CLIENT’S WORDS
-        </h2>
+        <div class="clients_words-pagination flex-shrink-0 text-white"></div>
       </div>
-      <div class="clients_words-pagination flex-shrink-0 text-white"></div>
     </div>
     <!-- Slider main container -->
-    <div class="!pl-4 swiper clients_words-swiper">
+    <div class="swiper clients_words-swiper !ml-3">
       <div class="swiper-wrapper">
         <template x-for="client in clients_words" :key="client.id">
           <div class="swiper-slide text-white">
             <div>
               <div
-                class="grid grid-cols-[auto,_1fr,_auto] grid-rows-[repeat(3,_auto)]"
+                class="grid grid-cols-[auto,_1fr,_auto] grid-rows-[repeat(3,_auto)] sm:grid-cols-[80px,_1fr,_80px] lg:grid-cols-[170px,_1fr,_170px]"
               >
-                <div class="col-start-1 row-start-1 mb-2">
+                <div class="col-start-1 row-start-1 mb-2 flex sm:justify-end">
                   <svg
                     width="25"
                     height="15"
@@ -40,7 +43,7 @@
                 </div>
                 <p
                   x-text="client.text"
-                  class="col-span-2 col-start-2 row-start-2 row-end-3 text-xs font-light leading-[160%]"
+                  class="col-span-2 col-start-2 row-start-2 row-end-3 text-xs font-light leading-[160%] sm:col-span-1 sm:col-start-2 md:text-lg md:leading-7"
                 ></p>
                 <div class="col-start-3 row-start-3">
                   <svg
@@ -57,7 +60,7 @@
                   </svg>
                 </div>
                 <h5
-                  class="mt-2.5 text-xs font-medium leading-[160%] col-start-2 row-start-5"
+                  class="col-start-2 row-start-5 mt-2.5 text-xs font-medium leading-[160%] md:translate-x-1/2 md:place-self-center md:text-lg md:leading-7"
                   x-text="client.author"
                 ></h5>
               </div>
@@ -66,8 +69,51 @@
         </template>
       </div>
 
-      <div class="clients_words-prev">prev</div>
-      <div class="clients_words-next">next</div>
+      <div
+        class="mt-[54px] grid gap-[38px] sm:px-20 md:grid-cols-2 lg:px-[170px]"
+      >
+        <div class="flex justify-center md:justify-start">
+          <button class="btn-primary w-full">
+            <a href="#contacts">contact us</a>
+          </button>
+        </div>
+
+        <!-- btn navigation -->
+        <div class="flex items-center justify-center gap-8.5 md:justify-end">
+          <div
+            class="clients_words-prev grid h-[45px] w-[45px] cursor-pointer place-content-center border border-white transition-all duration-200 md:h-[58px] md:w-[58px]"
+          >
+            <svg
+              width="23"
+              height="12"
+              viewBox="0 0 23 12"
+              fill="currenColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.8013 5.27027L22.5808 5.27027L22.5808 6.82933L21.8013 6.82933L21.8013 5.27027ZM0.859999 6.60101C0.555572 6.29659 0.555573 5.80302 0.859999 5.49859L5.8209 0.537694C6.12532 0.233268 6.61889 0.233268 6.92332 0.537694C7.22774 0.842119 7.22774 1.33569 6.92332 1.64012L2.51363 6.0498L6.92332 10.4595C7.22774 10.7639 7.22774 11.2575 6.92332 11.5619C6.61889 11.8663 6.12532 11.8663 5.8209 11.5619L0.859999 6.60101ZM21.8013 6.82933L1.41121 6.82933L1.41121 5.27027L21.8013 5.27027L21.8013 6.82933Z"
+                fill="currenColor"
+              />
+            </svg>
+          </div>
+          <div
+            class="clients_words-next grid h-[45px] w-[45px] cursor-pointer place-content-center border border-white transition-all duration-200 md:h-[58px] md:w-[58px]"
+          >
+            <svg
+              width="23"
+              height="12"
+              viewBox="0 0 23 12"
+              fill="currenColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.19873 5.27027L0.4192 5.27027L0.419201 6.82933L1.19873 6.82933L1.19873 5.27027ZM22.14 6.60101C22.4444 6.29659 22.4444 5.80302 22.14 5.49859L17.1791 0.537694C16.8747 0.233268 16.3811 0.233268 16.0767 0.537694C15.7723 0.842119 15.7723 1.33569 16.0767 1.64012L20.4864 6.0498L16.0767 10.4595C15.7723 10.7639 15.7723 11.2575 16.0767 11.5619C16.3811 11.8663 16.8747 11.8663 17.1791 11.5619L22.14 6.60101ZM1.19873 6.82933L21.5888 6.82933L21.5888 5.27027L1.19873 5.27027L1.19873 6.82933Z"
+                fill="currenColor"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
