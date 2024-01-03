@@ -1,27 +1,46 @@
-<header class="header sticky top-0 w-full  py-5 z-10">
+<header class="header absolute top-0 w-full pt-8 md:pt-[62px] z-10">
     <div class="container">
-        <div class="flex justify-between">
+        <div class="flex justify-between pl-10 md:pl-0">
             <a href="/">
-                <svg class="w-5 h-5">
-                    <use xlink:href="img/sprite.svg#rederacor"></use>
-                </svg>
+                <img class="w-full md:max-w-full max-w-[115px] object-cover" src="./img/svg/logo.svg" alt="logo">
             </a>
-            <div class="hidden md-1:block" :class="{ '!block' : $store.headerMenu.visible }">
+            <div class="hidden md:block">
                 <nav>
-                    <ul class="flex items-center gap-3">
+                    <ul class="flex flex-col text-white uppercase text-xl items-center space-y-5">
                         <li class="flex items-center">
-                            About
+                            <a href="#">
+                                Home
+                            </a>
                         </li>
                         <li>
-                            Blog
+                            <a href="#">
+                                About us
+                            </a>
                         </li>
                         <li>
-                            Collection
+                            <a href="#">
+                                Reviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Partners
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Contacts
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <button class="md-1:hidden" @click="$store.headerMenu.toggle()">Menu</button>
+            <button class="md:hidden" @click="$store.headerMenu.toggle()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="43" height="11" viewBox="0 0 43 11" fill="none">
+                    <path d="M0 1H25" stroke="white"/>
+                    <path d="M0 10H43" stroke="white"/>
+                </svg>
+            </button>
         </div>
     </div>
 </header>
