@@ -1,7 +1,7 @@
 <article
     x-cloak
     id="mobile-menu"
-    x-show="$store.headerMenu.visible"
+    x-show="$store.mobileMenu.visible"
     x-transition:enter="transition ease-out duration-300"
     x-transition:enter-start="translate-x-3/4"
     x-transition:enter-end="translate-x-0"
@@ -12,7 +12,7 @@
 >
     <div class="w-full">
         <div class="flex w-full justify-end">
-            <button class="p-10" type="button" @click="$store.headerMenu.hide()">
+            <button class="p-10" type="button" @click="$store.mobileMenu.hide()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
                     <path d="M1 1L25.5 25.5" stroke="white"/>
                     <path d="M25.5 1L1 25.5" stroke="white"/>

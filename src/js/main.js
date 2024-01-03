@@ -1,13 +1,15 @@
 import Alpine from 'alpinejs';
 // import AlpineI18n from "alpinejs-i18n";
 import './_vendor';
-import { headerMenu } from './store/headerMenu';
+import { mobileMenu } from './store/mobile-menu';
+import { stopScroll } from './store/stop-scroll';
 import { hero } from './components/hero';
 // import { content } from './vendor/content';
 
 document.addEventListener('alpine:init', () => {
     // alpine store
-    Alpine.store('headerMenu', headerMenu)
+    Alpine.store('mobileMenu', mobileMenu)
+    Alpine.store('stopScroll', stopScroll)
     // alpine store end
 
     // alpine data
