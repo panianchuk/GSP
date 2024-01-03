@@ -1,0 +1,59 @@
+<article
+    x-cloak
+    id="mobile-menu"
+    x-show="$store.mobileMenu.visible"
+    x-transition:enter="transition ease-out duration-300"
+    x-transition:enter-start="translate-x-3/4"
+    x-transition:enter-end="translate-x-0"
+    x-transition:leave="transition ease-in duration-300"
+    x-transition:leave-start="translate-x-0"
+    x-transition:leave-end="translate-x-3/4"
+    class="absolute top-0 right-0 flex h-full w-full z-20 touch-none flex-col items-start justify-between bg-black md:hidden"
+>
+    <div class="w-full">
+        <div class="flex w-full justify-end">
+            <button class="p-10" type="button" @click="$store.mobileMenu.hide()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                    <path d="M1 1L25.5 25.5" stroke="white"/>
+                    <path d="M25.5 1L1 25.5" stroke="white"/>
+                </svg>
+            </button>
+        </div>
+
+        <ul class="flex p-5 uppercase flex-col space-y-6 text-xl text-white pt-12.5 px-15">
+            <li class="flex items-center">
+                <a class="font-bold" href="#home">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About us
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Reviews
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Partners
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="w-full pb-[68px] md:pb-0 px-15">
+        <a
+            class="uppercase inline-block duration-300 hover:text-black hover:bg-white text-white border-[1px] border-white w-full py-3 text-base text-center"
+            href="#">
+            contact us
+        </a>
+    </div>
+</article>
