@@ -31,6 +31,7 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
+//=== SMOTH SCROll TO LINK NAVIGATION ===//
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -47,3 +48,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+//=== SCROll TO TOP ANIMATION ===//
+let prevScrollpos = window.pageYOffset;
+const scrollToTop = document.getElementById("scrollToTop");
+
+window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollpos < currentScrollPos || currentScrollPos === 0) {
+        scrollToTop.style.bottom = "-100px";
+    } else {
+        scrollToTop.style.bottom = "20px";
+    }
+    prevScrollpos = currentScrollPos;
+}
