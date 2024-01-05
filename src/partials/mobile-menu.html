@@ -38,6 +38,13 @@
             <li>
                 <a
                     @click="$store.mobileMenu.hide()"
+                    href="#services">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a
+                    @click="$store.mobileMenu.hide()"
                     href="#clients_words">
                     Reviews
                 </a>
@@ -61,9 +68,11 @@
 
     <div class="w-full pb-[68px] md:pb-0 px-15">
         <a
-            class="uppercase inline-block duration-300 hover:text-black hover:bg-white text-white border-[1px] border-white w-full py-3 text-base text-center"
-            href="#">
-            contact us
+            @click="$store.mobileMenu.hide()"
+            class="btn-primary w-full flex justify-center items-center"
+            href="#contacts"
+        >
+            Contact us
         </a>
     </div>
 </article>
