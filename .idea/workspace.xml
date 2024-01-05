@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc471774-d2e3-44d0-99bc-ef79776f556c" name="Changes" comment="" />
+    <list default="true" id="dc471774-d2e3-44d0-99bc-ef79776f556c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/js/components/contactUsForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/clients_words.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/clients_words.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/dedicated-to-your-success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/dedicated-to-your-success.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/index-hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/index-hero.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/mobile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/mobile-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/social.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +42,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/work/gsp",
+    "git-widget-placeholder": "feature/fixed-task-VG",
+    "last_opened_file_path": "D:/work/boosty-foods-dev",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
