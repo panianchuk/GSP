@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc471774-d2e3-44d0-99bc-ef79776f556c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/components/contactUsForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/clients_words.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/clients_words.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/dedicated-to-your-success.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/dedicated-to-your-success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/index-hero.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/index-hero.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/mobile-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/mobile-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/social.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/social.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/vendor/slider_content.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/vendor/slider_content.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
