@@ -8,7 +8,6 @@ import { hero } from './components/hero';
 import { socialForm } from "./components/socialForm";
 import { servicesSlider } from "./components/servicesSlider";
 import { clientsWords } from "./components/clientsWords";
-import { contactUsForm } from "./components/contactUsForm";
 // import { content } from './vendor/content';
 
 document.addEventListener('alpine:init', () => {
@@ -22,7 +21,6 @@ document.addEventListener('alpine:init', () => {
   Alpine.data("servicesSlider", servicesSlider);
   Alpine.data("clientsWords", clientsWords);
   Alpine.data("socialForm", socialForm);
-  Alpine.data("contactUsForm", contactUsForm);
 });
 
 // document.addEventListener("alpine-i18n:ready", function () {

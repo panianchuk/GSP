@@ -24,15 +24,15 @@
         LET’S get IN TOUCH!
       </h4>
 
-        <div x-data="contactUsForm">
+        <div>
             <form
                 id="social-form"
                 class="w-full md:grid md:grid-cols-[minmax(400px,_757px),_minmax(300px,_1fr)] relative"
             >
                 <div
-                    class="bg-lightGrey absolute inset-0 z-20 flex w-full items-center text-center justify-center md:text-2xl text-xl font-medium text-black"
                     x-show="isSuccessMessage"
                     x-transition.duration.400ms
+                    class="flex bg-lightGrey absolute inset-0 z-20 w-full items-center text-center justify-center md:text-2xl text-xl font-medium text-black"
                 >
                     Thank you! <br>
                     We will contact you back soon!
@@ -41,7 +41,7 @@
                 <div class="flex flex-col gap-4 md:gap-[25px]">
                     <input
                         type="text"
-                        name="name"
+                        name="Name"
                         id="socialForm_name"
                         placeholder="Your name"
                         class="w-full border-b border-black bg-transparent p-2 pt-0 text-sm font-light leading-[160%] text-black outline-none placeholder:text-sm placeholder:font-light placeholder:leading-[160%] placeholder:text-black md:px-3 md:text-lg md:placeholder:text-lg"
@@ -49,14 +49,14 @@
                     />
                     <input
                         type="email"
-                        name="email"
+                        name="Email"
                         id="socialForm_mail"
                         placeholder="Your email"
                         class="w-full border-b border-black bg-transparent p-2 pt-0 text-sm font-light leading-[160%] text-black outline-none placeholder:text-sm placeholder:font-light placeholder:leading-[160%] placeholder:text-black md:px-3 md:text-lg md:placeholder:text-lg"
                         required
                     />
                     <textarea
-                        name="message"
+                        name="Message"
                         id="socialForm_message"
                         placeholder="Your message"
                         class="h-22 w-full border-b border-black bg-transparent p-2 pt-0 text-sm font-light leading-[160%] text-black outline-none placeholder:text-sm placeholder:font-light placeholder:leading-[160%] placeholder:text-black md:h-[93px] md:px-3 md:text-lg md:placeholder:text-lg"
