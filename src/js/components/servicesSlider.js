@@ -11,8 +11,6 @@ export const servicesSlider = () => ({
     document.addEventListener("DOMContentLoaded", () => {
       this.initSwiper();
       this.services_content = services_content;
-
-      console.log(2345);
     });
   },
 
